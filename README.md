@@ -4,7 +4,7 @@ FashionHub is a responsive fashion website built using **HTML, CSS, and JavaScri
 
 ## 🌐 Live Demo
 
-🔗 **Live Website:** Add your deployed website link here
+🔗 https://inthusha20241647-commits.github.io/FashionHub-Website/
 
 ## 📌 About the Project
 
