@@ -10,11 +10,15 @@ FashionHub is a responsive fashion website built using **HTML, CSS, and JavaScri
 
 ### 🖥️ Desktop View
 
-![FashionHub Desktop View](./images/desktop.png)
+<div align="center">
+  <img src="./images/desktop.png" alt="FashionHub Desktop View" width="800">
+</div>
 
 ### 📱 Mobile View
 
-![FashionHub Mobile View](./images/mobile.png)
+<div align="center">
+  <img src="./images/mobile.png" alt="FashionHub Mobile View" width="400">
+</div>
 
 ## ✨ Features
 
