@@ -8,7 +8,7 @@ FashionHub is a responsive fashion website built using **HTML, CSS, and JavaScri
 
 ## 📸 Preview
 
-![FashionHub Website](screenshot.png)
+![FashionHub Website](images/home.png)
 
 ## ✨ Features
 
