@@ -598,3 +598,323 @@ li {
 .section2 input {
   width: 70%;
 }
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  .navbar h1 {
+    font-size: 28px;
+  }
+
+  .navbar img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .container-content {
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translateX(-50%);
+  }
+
+  .container-content h1,
+  .container-content h2 {
+    font-size: clamp(24px, 5vw, 38px);
+  }
+
+  .container-content p {
+    display: none;
+  }
+
+  .brands-images {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px 8px;
+  }
+
+  .brands-images img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  .container2-title {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .container2-title h1 {
+    font-size: 24px;
+  }
+
+  .container2-title p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .container2-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .container2-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 230px;
+  }
+
+  .newarrivals-images,
+  .sale-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .newarrivals-images-card img,
+  .sale-images-card img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  .container3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container3-section1 img {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 12px;
+  }
+
+  .container3-section2 {
+    padding: 12% 8%;
+    font-size: 22px;
+  }
+
+  .container4 {
+    padding: 32px 20px 0;
+  }
+
+  .container4 p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container5 {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .section1 {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 16px;
+  }
+
+  .section1 h2 {
+    font-size: 20px;
+  }
+
+  .section2 {
+    min-width: 0;
+    padding-top: 16px;
+  }
+
+  .section2 input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .section2-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .section2-card-image {
+    min-width: 0;
+  }
+
+  .section2-card-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  .section2-card-image h2 {
+    font-size: 18px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .container img {
+    height: 280px;
+  }
+
+  .container-content h1,
+  .container-content h2 {
+    font-size: 25px;
+  }
+
+  .brands {
+    padding-top: 30px;
+  }
+
+  .brands-images {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .brands-images img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brands-images__desc h3 {
+    font-size: 13px;
+  }
+
+  .container2 {
+    padding-top: 30px;
+  }
+
+  .container2-title {
+    flex-direction: column;
+  }
+
+  .container2-title h1 {
+    font-size: 21px;
+  }
+
+  .container2-title p {
+    font-size: 14px;
+  }
+
+  .container2-content {
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .container2-card {
+    min-height: 200px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .container2-card img {
+    width: 64px;
+  }
+
+  .container2-card h2 {
+    font-size: 18px;
+  }
+
+  .newarrivals,
+  .sale {
+    padding-top: 28px;
+  }
+
+  .newarrivals > h2,
+  .sale > h2 {
+    font-size: 30px !important;
+  }
+
+  .newarrivals-images-card p,
+  .sale-images-card p {
+    font-size: 15px;
+  }
+
+  .sale-images-heart img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .container3 {
+    grid-template-columns: 1fr;
+  }
+
+  .container3-section1 img {
+    height: 210px;
+  }
+
+  .container3-section2 {
+    padding: 8px 20px 24px;
+    font-size: 19px;
+  }
+
+  .container3-section2 p {
+    font-size: 16px;
+  }
+
+  .container4 {
+    padding: 28px 14px 0;
+  }
+
+  .container4 h2 {
+    font-size: 24px;
+  }
+
+  .container4 h3 {
+    font-size: 14px;
+  }
+
+  .container4 input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 24px 18px;
+  }
+
+  .footer h2,
+  .footer h3 {
+    font-size: 16px;
+  }
+
+  .container5 {
+    padding: 0 14px;
+  }
+
+  .section1 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px 20px;
+  }
+
+  .section1 > div {
+    min-width: 85px;
+  }
+
+  .section1 h2 {
+    font-size: 17px !important;
+  }
+
+  .section1 li {
+    font-size: 14px;
+  }
+
+  .section2-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section2-card-image h2 {
+    font-size: 16px;
+  }
+}
