@@ -12,23 +12,68 @@ closemenu.addEventListener("click", function(){
 
 
 var search = document.getElementById("search");
-var div = document.querySelectorAll(".section2-card-image");
+var products = document.querySelectorAll(".section2-card-image");
+var occasionFilters = document.querySelectorAll(
+    ".section1-cart1 input[type='checkbox']"
+);
+var colorFilters = document.querySelectorAll(
+    ".section1-cart2 input[type='checkbox']"
+);
+var arrivalFilters = document.querySelectorAll(
+    ".section1-cart3 input[type='checkbox']"
+);
 
-search.addEventListener("keyup", function(event){
+function matchesFilterGroup(filters, productOptions) {
+    var hasSelectedFilter = false;
 
-    var enteredValue = event.target.value.toUpperCase();
+    for (var i = 0; i < filters.length; i++) {
+        if (filters[i].checked) {
+            hasSelectedFilter = true;
 
-    for(count = 0; count < div.length; count++){
-
-        var h2List = div[count].querySelector(".h2List")
-
-        if(h2List.textContent.toUpperCase().indexOf(enteredValue) < 0){
-
-            div[count].style.display = "none";
-
-        }else{
-
-            div[count].style.display = "block";
+            if (productOptions.indexOf(filters[i].value.toLowerCase()) !== -1) {
+                return true;
+            }
         }
     }
-})
+
+    return !hasSelectedFilter;
+}
+
+function filterProducts() {
+    var searchText = search ? search.value.toLowerCase() : "";
+
+    for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+        var productName = product.querySelector(".h2List").textContent.toLowerCase();
+        var matchesSearch = productName.indexOf(searchText) !== -1;
+        var matchesOccasion = matchesFilterGroup(
+            occasionFilters,
+            product.dataset.occasion.split(" ")
+        );
+        var matchesColor = matchesFilterGroup(
+            colorFilters,
+            product.dataset.colors.split(" ")
+        );
+        var matchesArrival = matchesFilterGroup(
+            arrivalFilters,
+            product.dataset.arrival.split(" ")
+        );
+
+        product.style.display =
+            matchesSearch && matchesOccasion && matchesColor && matchesArrival
+                ? ""
+                : "none";
+    }
+}
+
+if (search) {
+    search.addEventListener("input", filterProducts);
+}
+
+var allFilters = document.querySelectorAll(
+    ".section1 input[type='checkbox']"
+);
+
+for (var i = 0; i < allFilters.length; i++) {
+    allFilters[i].addEventListener("change", filterProducts);
+}
