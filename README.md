@@ -1,62 +1,64 @@
-# 👗 FashionHub
+# 👗 FashionHub – Fashion E-commerce Website
 
-FashionHub is a responsive fashion website built using **HTML, CSS, and JavaScript**. It provides an attractive interface for browsing products, exploring collections, searching products, and contacting the website.
+FashionHub is a responsive fashion e-commerce frontend website built using HTML5, CSS3, and JavaScript. It provides an interface for exploring fashion products, browsing collections, searching and filtering items, and contacting the website through a dedicated contact page.
 
 ## 🌐 Live Demo
 
-🔗 [View Live Demo](https://inthusha20241647-commits.github.io/FashionHub-Website/)
-
-## 📸 Screenshots
-
-### 🖥️ Desktop View
-
-<div align="center">
-  <img src="./images/desktop.png" alt="FashionHub Desktop View" width="800">
-</div>
-
-### 📱 Mobile View
-
-<div align="center">
-  <img src="./images/mobile.png" alt="FashionHub Mobile View" width="400">
-</div>
+[![Live Demo](https://img.shields.io/badge/Live-Demo-orange?style=for-the-badge&logo=github)](https://inthusha20241647-commits.github.io/FashionHub-Website/)
 
 ## ✨ Features
 
-* 🏠 Responsive home page
-* 🛍️ Fashion product collections
-* 🔎 Product search functionality
-* 🎨 Product filtering by categories
-* 📱 Responsive mobile sidebar navigation
-* 📩 Contact form
-* 📧 Newsletter section
-* 💻 Responsive design for different screen sizes
+- 🏠 **Home Page:** Introduces the website with a structured and visually appealing layout.
+- 🛍️ **Product Collections:** Displays fashion products in an organized collection page.
+- 🔍 **Product Search:** Allows users to search for products.
+- 🏷️ **Category Filtering:** Enables users to filter products based on categories.
+- 📱 **Mobile Sidebar Navigation:** Provides sidebar navigation for smaller screens.
+- 📩 **Contact Page:** Includes a contact form layout for user inquiries.
+- 📧 **Newsletter Section:** Provides an interface for newsletter subscriptions.
+- 🎨 **Custom Styling:** Uses CSS for layouts, colors, typography, spacing, and visual effects.
+- 📐 **Responsive Design:** Adapts the website layout to different screen sizes.
 
-## 🛠️ Technologies
+## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript
-* Google Fonts
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
-FashionHub/
+FashionHub-Website/
+│
+├── images/
 ├── index.html
 ├── collections.html
 ├── contact.html
 ├── style.css
 ├── script.js
-└── images/
+└── README.md
 ```
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
-1. Clone the repository.
-2. Open the project in VS Code.
-3. Open `index.html`.
-4. Run using **Live Server** or open it directly in a browser.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/inthusha20241647-commits/FashionHub-Website.git
+   ```
+
+2. Open the project folder in VS Code.
+3. Open `index.html` in your browser or use the Live Server extension.
+
+## 🎯 Learning Objectives
+
+- Build a multi-page website using HTML, CSS, and JavaScript.
+- Practice DOM manipulation and JavaScript event handling.
+- Implement product search and category filtering.
+- Understand responsive navigation techniques.
+- Organize website content across multiple pages.
+- Improve frontend development and user interface design skills.
 
 ---
 
-⭐ If you like this project, feel free to star the repository.
+*This project is part of my continuous learning journey in frontend web development.*
