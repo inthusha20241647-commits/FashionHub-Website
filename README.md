@@ -19,7 +19,7 @@ FashionHub is a responsive fashion e-commerce frontend website built using HTML5
 ### 📱 Mobile View
 
 <p align="center">
-  <img src="./images/mobile.png" alt="Mobile View" width="450">
+  <img src="./images/mobile.png" alt="Mobile View" width="400">
 </p>
 
 ## ✨ Features
